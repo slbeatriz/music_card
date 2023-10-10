@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300&family=Roboto:wght@100;300;400&display=swap');
+
+body{
+    height: 100vh; /* 100% da altura da janela */
+    margin: 0; /* Remove as margens padrão para evitar espaçamento */
+    font-family:'Geologica', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E8FF;
+    background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+a{
+    color: #382AE1;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 450px;
+}
+
+.music-img img{
+    border-radius: 20px 20px 0 0;
+}
+
+.text{
+    text-align: center;
+    padding: 0 40px;
+}
+
+.play{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F9FE;
+    border-radius: 5px;
+    margin: 40px 40px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.plan{
+    display: block;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;  
+}
+
+.button button{
+    margin: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    padding: 14px;
+    border: none;
+}
+
+.one{
+    background-color: #382AE1;
+    color: #ffffff;
+    box-shadow: 0px 1px 5px 1px #888;
+    transition: transform 0.3s linear;
+}
+
+.one:hover{
+    transform: scale(0.99);
+}
+
+.two{
+    background-color: #ffffff;
+    transition: transform 0.1s linear;
+}
+
+.two:hover{
+    transform: scale(0.99);
+}
+
+@media screen and (max-width: 730px){
+   body{ background-image: none;
+   }
+
+   .container{
+    width: 350px;
+}
+    .music-img img{
+    width: 350px;    
+    }
+}
